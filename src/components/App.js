@@ -1,23 +1,14 @@
 import React from 'react'
 import '../styles/App.css';
-// import {useState} from 'react'
 const App = () => {
-// const [text, setText] = useState("")
-// const [num, setNum] = useState("")
-// const[data1, setData1] = useState([])
-// const[data2, setData2] = useState([])
   const handleInput1 = (event) =>{
   const input1 = event.target.value
-//     setText(input1)
-//     const newText1 = [...data1, text]
-//     setData1(newText1)
+    
     console.log(input1)
   }
   const handleInput2 = (event) =>{
     const input2 = event.target.value
-//     setNum(input2)
-//     const newData2 = [...data2, num]
-//     setNum(newData2)
+
     console.log(input2)
   }
 
