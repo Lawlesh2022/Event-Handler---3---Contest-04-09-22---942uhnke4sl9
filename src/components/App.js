@@ -10,13 +10,15 @@ const[data2, setData2] = useState([])
   const input1 = event.target.value
     setText(input1)
     const newText1 = [...data1, text]
-    console.log(newText1)
+    setData1(newText1)
+    console.log(data1)
   }
   const handleInput2 = (event) =>{
     const input2 = event.target.value
     setNum(input2)
     const newData2 = [...data2, num]
-    console.log(newData2)
+    setNum(newData2)
+    console.log(data2)
   }
 
   // do not change id of input elements
