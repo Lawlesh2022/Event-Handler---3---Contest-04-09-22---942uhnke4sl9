@@ -2,13 +2,19 @@ import React from 'react'
 import '../styles/App.css';
 import {useState} from 'react'
 const App = () => {
-const [text1, setText1] = useState("")
-const [text2, setText2] = useState("")
+const [text, setText] = useState("")
+const [num, setNum] = useState("")
+const[data1, setData1] = useState([])
+const[data2, setData2] = useState([])
   const handleInput1 = (event) =>{
-  setText1(event.target.value)
+  const input1 = event.target.value
+   const newData1 = [...data1, input1]
+    setData(newData1)
   }
-  const handleInput1 = (event) =>{
-   setText(event.target.value)
+  const handleInput2 = (event) =>{
+  const input2 = event.target.value
+   const newData2 = [...data2, input1]
+    setData(newData2)
   }
 
   // do not change id of input elements
