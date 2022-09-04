@@ -19,8 +19,7 @@ const[data2, setData2] = useState([])
 
   // do not change id of input elements
   return (
-    <div id="main">
-       <p>{text1}{text2}</p>
+    <div id="main">      
       <label htmlFor='text-input'>Text Input:- </label>
       <input id="text-input" type={'text'} onChange = {handleInput1}/>
 
