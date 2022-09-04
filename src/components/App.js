@@ -8,12 +8,14 @@ const[data1, setData1] = useState([])
 const[data2, setData2] = useState([])
   const handleInput1 = (event) =>{
   const input1 = event.target.value
-   const newText1 = [...data1, input1]
+    setText(input1)
+    const newText1 = [...data1, text]
     console.log(newText1)
   }
   const handleInput2 = (event) =>{
-  const input2 = event.target.value
-   const newData2 = [...data2, input1]
+    const input2 = event.target.value
+    setNum(input2)
+    const newData2 = [...data2, num]
     console.log(newData2)
   }
 
