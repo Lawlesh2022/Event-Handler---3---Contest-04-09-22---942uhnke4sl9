@@ -1,17 +1,18 @@
 import React from 'react'
 import '../styles/App.css';
+import{useState} from 'react
 const App = () => {
-  const handleInput1 = (event) =>{
-  const input1 = event.target.value
-    
-    console.log(input1)
-  }
-  const handleInput2 = (event) =>{
-    const input2 = event.target.value
-
-    console.log(input2)
-  }
-
+  const [data, setData] = useState("")
+    const handleInput1 = (event) =>{
+        const input1 = event.target.value
+          setData(input1)
+          console.log(input1)
+        }
+        const handleInput2 = (event) =>{
+          const input2 = event.target.value
+            setData(input2)
+          console.log(input2)
+        }
   // do not change id of input elements
   return (
     <div id="main">      
