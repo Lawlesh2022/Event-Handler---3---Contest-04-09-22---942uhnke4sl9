@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/App.css';
-import{useState} from 'react
+import{useState} from 'react'
 const App = () => {
   const [data1, setData1] = useState("")
    const [data2, setData2] = useState("")
